@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../styles/fonts.css">
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/main.css">
+	<title>grid</title>
+	<style>
+	.bg-pink {
+		background: pink;
+	}
+</style>
+</head>
+<body class="container">
+	<h2>Main grid</h2>
+	<p>Classes col-left, col-center and col-right are to build the main grid.</p>
+	<p>On min screen size = 600px, col-left takes the whole width, and col-center & col-right go over the next row.</p>
+	<p>On min screen size = 900px they all stand on one row.</p>
+	<div class="clearfix">
+		<div class="col-left bg-pink">some content</div>
+		<div class="col-center bg-pink">some content</div>
+		<div class="col-right bg-pink">some content</div>
+	</div>
+	<h2>Columns</h2>
+	<p>This is an example of 3 column in one row. The row's width can be any.</p>
+	<div class="clearfix">
+		<div class="col-3 bg-pink">some content</div>
+		<div class="col-3 bg-pink">some content</div>
+		<div class="col-3 bg-pink">some content</div>
+	</div>
+	<p>This is an example of 2 column in one row. The row's width can be any.</p>
+	<div class="clearfix">
+		<div class="col-2 bg-pink">some content</div>
+		<div class="col-2 bg-pink">some content</div>
+	</div>
+	<h2>Header</h2>
+	<p>Header has this kind of structure.</p>
+	<p>On min screen size = 600px, col-left-center-union takes the whole width, and col-right go over the next row.</p>
+	<p>On min screen size = 900px they both stand on one row.</p>
+	<header class="header clearfix">
+		<div class="col-left-center-union bg-pink">some content</div>
+		<div class="col-right bg-pink">some content</div>
+	</header>
+</body>
+</html>
